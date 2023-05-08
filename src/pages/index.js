@@ -1,6 +1,10 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import Header from '../components/Header';
+import Button from '../components/Button';
+import Skill from '../components/Skill';
+import ReactLogo from '../images/react.png';
+import JavaLogo from '../images/java.png';
 
 const IndexPage = () => {
   return (
@@ -39,27 +43,20 @@ const IndexPage = () => {
           We provide wallet services, marketplace solutions, NFT tools, and
           more.
         </p>
-        <button
-          css={css`
-            margin-top: 20px;
-            background: linear-gradient(
-              104.1deg,
-              #7735e8 32.26%,
-              #ba2df0 80.02%,
-              #c62cf1 88.17%
-            );
-            color: white;
-            border-color: #0e1071;
-            font-size: 18px;
-            font-weight: 600;
-            transition: #0f0644 0.5s ease, #420084 0.5s ease;
-            width: 215px;
-            height: 59px;
-            border-radius: 60px;
-          `}
-        >
-          View our services
-        </button>
+        <Button>View our services</Button>
+      </div>
+      <div
+        css={css`
+          display: flex;
+          margin: 20px 60px;
+        `}
+      >
+        <Skill>
+          <img src={ReactLogo} />
+        </Skill>
+        <Skill>
+          <img src={JavaLogo} />
+        </Skill>
       </div>
     </main>
   );
