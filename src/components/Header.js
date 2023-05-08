@@ -23,20 +23,20 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header
-      className="bg-white"
-      css={css`
-        position: sticky;
-        top: 120px;
-        transform: translateX(20px);
-        background: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(50px);
-        border-radius: 60px;
-      `}
-    >
+    <header css={css``}>
       <nav
         className="mx-auto flex max-w-7xl h-16 items-center p-1 lg:px-8"
         aria-label="Global"
+        css={css`
+          position: fixed;
+          top: 40px;
+          left: 20px;
+          right: 20px;
+          width: 100%;
+          background: rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(50px);
+          border-radius: 60px;
+        `}
       >
         <div
           className="flex"

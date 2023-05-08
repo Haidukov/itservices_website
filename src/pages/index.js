@@ -8,7 +8,7 @@ const IndexPage = () => {
       <Header />
       <div
         css={css`
-          margin: 20px;
+          margin-top: 20px;
           background-color: #f6efff;
           width: 100%;
           border-radius: 45px;
