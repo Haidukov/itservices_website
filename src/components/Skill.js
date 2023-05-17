@@ -15,6 +15,7 @@ const Skill = ({ children }) => (
       box-shadow: 0px 4px 100px rgba(159, 150, 178, 0.14);
       border: 1px solid rgba(0, 0, 0, 0.05);
       margin-right: 5px;
+      margin-bottom: 5px;
     `}
   >
     {children}

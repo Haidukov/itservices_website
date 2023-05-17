@@ -5,6 +5,10 @@ import Button from '../components/Button';
 import Skill from '../components/Skill';
 import ReactLogo from '../images/react.png';
 import JavaLogo from '../images/java.png';
+import SpringBootLogo from '../images/spring_boot.png';
+import AngularLogo from '../images/angular.png';
+import DockerLogo from '../images/docker.png';
+import AWSLogo from '../images/aws.png';
 
 const IndexPage = () => {
   return (
@@ -48,6 +52,7 @@ const IndexPage = () => {
       <div
         css={css`
           display: flex;
+          overflow: hidden;
           margin: 20px 60px;
         `}
       >
@@ -56,6 +61,24 @@ const IndexPage = () => {
         </Skill>
         <Skill>
           <img src={JavaLogo} />
+        </Skill>
+        <Skill>
+          <img src={SpringBootLogo} />
+        </Skill>
+        <Skill>
+          <img src={AngularLogo} />
+        </Skill>
+        <Skill>
+          <img src={DockerLogo} />
+        </Skill>
+        <Skill>
+          <img
+            src={AWSLogo}
+            css={css`
+              margin-top: 10px;
+              width: 60px;
+            `}
+          />
         </Skill>
       </div>
     </main>
