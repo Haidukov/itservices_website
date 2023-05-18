@@ -26,6 +26,7 @@ import MongoDBLogo from '../images/mongo.png';
 import WebpackLogo from '../images/webpack.png';
 import NewRelicLogo from '../images/new_relic.png';
 import CucumberLogo from '../images/cucumber.png';
+import MySQLLogo from '../images/mysql.png';
 
 const IndexPage = () => {
   return (
@@ -157,6 +158,9 @@ const IndexPage = () => {
         </Skill>
         <Skill>
           <img src={CucumberLogo} />
+        </Skill>
+        <Skill>
+          <img src={MySQLLogo} />
         </Skill>
       </div>
     </main>
